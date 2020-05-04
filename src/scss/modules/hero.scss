@@ -1,0 +1,38 @@
+.hero {
+    max-width: 1184px;
+    padding:112px 0 200px;
+    margin: 0 auto;
+    &__description {
+        color: $gray;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        margin-bottom: 3.75rem;
+        max-width: 780px;
+    }
+    &__mail {
+        border-bottom: 2px solid $blue;
+        color: $blue;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25rem;
+        padding-bottom: 8px;
+        text-decoration: none;
+    }
+    &__link {
+        color: $blue;
+        font-weight: 500;
+        
+    }
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        max-width: 780px;
+        margin-bottom: 1rem;
+    }
+}
