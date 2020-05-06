@@ -1,0 +1,72 @@
+.skills {
+    max-width: 1184px;
+    margin: 0 auto;
+    &__title {
+        border-bottom: 2px solid #E5E8EC; 
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.25rem;
+        margin: 0;
+        padding: 1rem 0;
+    }
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8rem 0 0;
+    &__item {
+        color: $gray;
+        padding: 11px 0 11px 30px;
+        position: relative;
+        &::before {
+            background: url('../assets/img/check-green.svg');
+            content: '';
+            display: block;
+            height: 18px;
+            left: 0;
+            position: absolute;
+            top: 10px;
+            width: 18px;
+            .skills-list--violet & {
+                background: url('../assets/img/check-purple.svg');
+            }
+            .skills-list--blue & {
+                background: url('../assets/img/check-blue.svg');
+            }
+        }    
+    }
+    &__list {
+        column-gap: 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+        margin-top: calc(1.5rem + 4px);
+        padding: 0;
+    }
+    &__title {
+        color: $big-stone;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2.75rem;
+        margin: 0;
+        &::before {
+            background: $green;
+            border-radius: 8px;
+            content: '';
+            display:block;
+            height: 4px;
+            margin-bottom: 1.5rem;
+            width: 80px;
+            .skills-list--violet & {
+                background: $violet;
+            }
+            .skills-list--blue & {
+                background: $mariner-blue;
+            }
+        }
+    }
+}
