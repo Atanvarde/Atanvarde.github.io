@@ -28,6 +28,9 @@
     margin: 0;
     padding: 0;
     row-gap: 1.5rem;
+    @media (max-width: $mobile) {
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
 }
 
 .project {
