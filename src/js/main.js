@@ -1,7 +1,5 @@
 "use strict";
 
-console.log(`Hello world!`);
-
 const list = document.querySelector('.project-list--js');
 
 fetch(`https://api.github.com/users/Atanvarde/repos?sort=updated&direction=desc`)
